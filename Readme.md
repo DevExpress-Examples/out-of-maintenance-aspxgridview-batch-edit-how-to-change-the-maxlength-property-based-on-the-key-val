@@ -5,6 +5,9 @@
 * [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
 <!-- default file list end -->
 # ASPxGridView - Batch Edit - How to change the MaxLength property based on the key value
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t175195/)**
+<!-- run online end -->
 
 
 <p>This example illustrates how to change an editor's server-side properties based on the key value if ASPxGridView uses the Batch Edit mode. ASPxMemo placed inside the C3 column has different MaxLength for different rows: MaxLength = 4 for rows with the odd ID and 10 for rows with the even ID. <br /><br /></p>
