@@ -4,9 +4,7 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
 using DevExpress.Web.Data;
-using DevExpress.Web.ASPxGridView;
-using DevExpress.Web.ASPxEditors;
-using DevExpress.Web.ASPxCallbackPanel;
+using DevExpress.Web;
 
 public partial class _Default : System.Web.UI.Page
 {
@@ -105,7 +103,7 @@ public partial class _Default : System.Web.UI.Page
     }
 
 
-    protected void clbPanel_Callback(object sender, DevExpress.Web.ASPxClasses.CallbackEventArgsBase e)
+    protected void clbPanel_Callback(object sender, DevExpress.Web.CallbackEventArgsBase e)
     {
         int index = Convert.ToInt32(e.Parameter);
         int id = Convert.ToInt32(Grid.GetRowValues(index, "ID"));

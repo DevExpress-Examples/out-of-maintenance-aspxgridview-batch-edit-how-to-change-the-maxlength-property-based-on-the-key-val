@@ -4,9 +4,7 @@ Imports System.Collections.Specialized
 Imports System.ComponentModel
 Imports System.Linq
 Imports DevExpress.Web.Data
-Imports DevExpress.Web.ASPxGridView
-Imports DevExpress.Web.ASPxEditors
-Imports DevExpress.Web.ASPxCallbackPanel
+Imports DevExpress.Web
 
 Partial Public Class _Default
     Inherits System.Web.UI.Page
@@ -91,7 +89,7 @@ Partial Public Class _Default
     End Class
 
 
-    Protected Sub clbPanel_Callback(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxClasses.CallbackEventArgsBase)
+    Protected Sub clbPanel_Callback(ByVal sender As Object, ByVal e As DevExpress.Web.CallbackEventArgsBase)
         Dim index As Integer = Convert.ToInt32(e.Parameter)
 
         Dim id_Renamed As Integer = Convert.ToInt32(Grid.GetRowValues(index, "ID"))
